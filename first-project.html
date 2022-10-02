@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(t)here</title>
+    <style>
+      body {
+        background: linear-gradient(
+          to right,
+          rgb(233, 213, 202) 20%,
+          rgb(130, 115, 151) 200.7%
+        );
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+      }
+
+      h1 {
+        font-family: cursive;
+        color: #363062;
+      }
+      h2 {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        color: rgb(54, 48, 98, 0.6);
+      }
+
+      h3 {
+        font-family: "Courier New", Courier, monospace;
+        margin: 8px;
+        color: #363062;
+        font-weight: bolder;
+      }
+
+      h4 {
+        font-family: "Courier New", Courier, monospace;
+        margin: 5px;
+        font-size: 18px;
+        color: rgb(54, 48, 98, 0.4);
+      }
+
+      p {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+        font-size: 16px;
+        color: rgb(54, 48, 98, 0.6);
+      }
+      a {
+        text-decoration: none;
+        color: rgb(54, 48, 98, 0.6);
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 10px;
+        text-align: center;
+      }
+
+      li {
+        list-style: none;
+        display: inline-block;
+        background-color: rgb(255, 255, 255, 0.3);
+        margin: 10px;
+        padding: 5px;
+        width: 190px;
+        border-radius: 15px;
+        transition: all 400ms ease-in-out;
+      }
+
+      li:hover {
+        background-color: rgb(130, 115, 151, 0.2);
+        border-radius: 15px;
+        cursor: crosshair;
+      }
+
+      button,
+      img {
+        box-shadow: rgb(54, 48, 98, 0.3) 0px 5px 5px 0;
+        border: 2px solid #4d4c7d;
+      }
+
+      img {
+        border-radius: 80px;
+        margin: 20px auto;
+        transition: all 250ms ease-in-out;
+        display: block;
+      }
+      button {
+        margin: 10px auto;
+        background-color: #827397;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #ffffff;
+        padding: 15px;
+        transition: all 250ms ease-in-out;
+        padding-left: 10px;
+        display: block;
+        text-align: center;
+      }
+
+      button:hover {
+        background-color: #363062;
+        color: #e9d5ca;
+        cursor: pointer;
+        border: 2px solid #ffffff;
+      }
+
+      .articleTravel {
+        text-align: right;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .visitedList {
+        display: none;
+        width: 180px;
+        background: rgb(54, 48, 98);
+        position: absolute;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 400;
+        margin: -75px 0px 0px 220px;
+        padding: 10px;
+        color: #ffffff;
+        font-weight: bolder;
+        border-radius: 20px;
+      }
+
+      .showVisitedList:hover .visitedList {
+        display: block;
+      }
+      .showVisitedList:hover {
+        cursor: progress;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Let's travel ?</h1>
+      <hr />
+      <h2>
+        "... travel is an essential industry, an essential activity. It's not
+        essential the way hospitals and grocery stores are essential. Travel is
+        essential the way books and hugs are essential. Food for the soul. Right
+        now, we're between courses, savoring where we've been, anticipating
+        where we'll go. Maybe it's Zanzibar and maybe it's the campground down
+        the road that you've always wanted to visit." <em> by Eric Weiner</em>
+      </h2>
+      <p class="articleTravel">
+        <a
+          href="https://www.nationalgeographic.com/travel/article/why-travel-should-be-considered-an-essential-human-activity"
+          target="_blank"
+          title="Why travel should be considered an essential human activity"
+        >
+          Read more on National Geographic
+        </a>
+      </p>
+      <hr />
+      <div class="table">
+        <ul>
+          <li>
+            <h4>First trip:</h4>
+            <h3>France, 2014</h3>
+          </li>
+
+          <li class="showVisitedList">
+            <h4>Countrys visted:</h4>
+            <h3>24 ✅</h3>
+
+            <div class="visitedList">
+              Austria <br />
+              Belgium<br />
+              Brazil<br />
+              Croatia<br />
+              Czech Republic<br />
+              Estonia<br />
+              France<br />
+              Germany <br />
+              Greece <br />
+              Hungary <br />
+              Ireland <br />
+              Italy <br />
+              Latvia <br />
+              Lithuania<br />
+              Luxembourg <br />
+              Malta <br />
+              Monaco <br />
+              Netherlands <br />
+              Poland <br />
+              Portugal <br />
+              Spain <br />
+              Switzerland <br />
+              Turkey <br />
+              United Kingdom
+            </div>
+          </li>
+
+          <li>
+            <h4>Last trip:</h4>
+            <h3>Spain, 2021</h3>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/424/original/S-WM11.jpg?1657833843"
+        width="60%"
+      />
+      <button type="button" class="suggestion">Make a suggestion</button>
+      <p>
+        Coded by
+
+        <a
+          href="https://www.instagram.com/suvirote/"
+          target="_blank"
+          title="Instagram"
+          class="coder"
+        >
+          <em>Suelen Virote</em>
+        </a>
+      </p>
+    </div>
+  </body>
+
+  <script>
+    function verifyUserData(info) {
+      if (info === null || info === "") {
+        alert(`❌ Oh noooo, something is missing. \n Please restart. 😕`);
+        return true;
+      }
+    }
+
+    function visitorSuggestion() {
+      let name = prompt("What is your name?");
+      if (verifyUserData(name)) {
+      } else {
+        let country = prompt("Which country should I go next?");
+        if (verifyUserData(country)) {
+        } else {
+          let listing = [
+            "Austria",
+            "Belgium",
+            "Brazil",
+            "Croatia",
+            "Czech Republic",
+            "Estonia",
+            "France",
+            "Germany",
+            "Greece",
+            "Hungary",
+            "Ireland",
+            "Italy",
+            "Latvia",
+            "Lithuania",
+            "Luxembourg",
+            "Malta",
+            "Monaco",
+            "Netherlands",
+            "Poland",
+            "Portugal",
+            "Spain",
+            "Switzerland",
+            "Turkey",
+            "United Kingdom",
+          ];
+
+          if (listing.includes(country)) {
+            alert(
+              `🙈 Thanks for your suggestion, ${name}!\n But I have already been in ${country}. 😉`
+            );
+          } else {
+            alert(
+              `✔️ Thanks for your suggestion, ${name}!\n I'll consider ${country} for my next trip. 👋`
+            );
+          }
+        }
+      }
+    }
+
+    let suggestion = document.querySelector(".suggestion");
+    suggestion.addEventListener("click", visitorSuggestion);
+  </script>
+</html>
