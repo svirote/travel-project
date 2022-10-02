@@ -72,7 +72,7 @@ function footer() {
         <div class="col-4">
           <div class="icon-links d-flex justify-content-end">
             <a
-              href="https://github.com/svirote/"
+              href="https://github.com/svirote/travel-project"
               target="_blank"
               title="GitHub Suelen Virote"
             >
