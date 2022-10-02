@@ -62,7 +62,7 @@ function footer() {
         <div class="col-8">
           This project was coded by Suelen Virote, and it is
           <a
-            href="https://github.com/svirote/about-me-page"
+            href="https://github.com/svirote/travel-project"
             target="_blank"
             title="GitHub Suelen Virote"
           >
@@ -72,7 +72,7 @@ function footer() {
         <div class="col-4">
           <div class="icon-links d-flex justify-content-end">
             <a
-              href="https://github.com/svirote/travel-project"
+              href="https://github.com/svirote"
               target="_blank"
               title="GitHub Suelen Virote"
             >
