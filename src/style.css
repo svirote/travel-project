@@ -6,6 +6,7 @@
   --fourth-color: #f0ece3;
   --fourth-background: rgb(240, 236, 227, 0.6);
   --shadow: rgb(54, 48, 98, 0.3) 2px 7px 7px 2px;
+  --background-monocolor: #d1dbdd;
 }
 
 .active-page {
@@ -51,15 +52,43 @@ footer a:hover {
 
 h2 {
   font-family: "Kalam", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: var(--first-color);
 }
 
 h3 {
   font-family: "Kalam", cursive;
+  font-size: 20px;
+  color: var(--first-color);
+}
+
+h4 {
+  font-family: "Kalam", cursive;
   color: var(--first-color);
   font-size: 18px;
   margin: 0;
+}
+
+.countries-10 {
+  font-family: "Kalam", cursive;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  background-color: var(--fourth-background);
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  box-shadow: var(--shadow);
+}
+
+.countries-10 img {
+  width: 130px;
+  border-radius: 5px;
+}
+
+.flags {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .icon-links a {
@@ -77,7 +106,6 @@ footer .icon-links a:hover {
 }
 
 .group-list {
-  list-style: none;
   display: inline-block;
   background-color: var(--fourth-background);
   margin: 10px;
@@ -147,7 +175,17 @@ footer .icon-links a:hover {
   background: var(--fourth-background);
 }
 
+.top-10-text {
+  text-align: center;
+  border-radius: 3px;
+  background-color: var(--fourth-background);
+  padding: 5px 10px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 ul {
   padding-left: 10px;
   text-align: center;
+  list-style: none;
 }
