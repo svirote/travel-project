@@ -85,7 +85,7 @@
     </header>
 
     <div class="container">
-      <div class="row p-3">
+      <div class="row p-3" id="index-content">
         <div class="col-md-7 text-article">
           <h3>
             "... travel is an essential industry, an essential activity. It's
@@ -127,6 +127,49 @@
           <i class="fa-regular fa-pen-to-square"></i>
           Make a suggestion
         </button>
+      </div>
+
+      <div class="mx-auto suggestion-box" style="max-width: 500px">
+        <form id="form-suggestion" class="contact-form" autocomplete="off">
+          <div class="row">
+            <div class="col-5">
+              <label for="user-name" class="col-form-label">Your name:</label>
+            </div>
+
+            <div class="col-7">
+              <input
+                name="UserName"
+                type="text"
+                class="form-control"
+                id="user-name"
+                required="required"
+                placeholder="Name"
+              />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-5">
+              <label for="country-suggestion" class="col-form-label"
+                >Your suggestion:</label
+              >
+            </div>
+
+            <div class="col-7">
+              <input
+                name="Country-name"
+                type="text"
+                class="form-control"
+                id="country-suggestion"
+                required="required"
+                placeholder="Country name"
+              />
+            </div>
+          </div>
+          <div class="d-grid d-flex justify-content-center mt-2">
+            <button type="submit" class="send-suggestion">Send</button>
+          </div>
+        </form>
       </div>
     </div>
 

@@ -156,6 +156,17 @@ footer .icon-links a:hover {
   border-radius: 3px;
 }
 
+.send-suggestion {
+  margin: 10px;
+  background-color: var(--first-color);
+  border-radius: 10px;
+  color: var(--fourth-color);
+  border: none;
+  padding: 8px 15px;
+  display: block;
+  text-align: center;
+}
+
 .suggestion {
   margin: 10px;
   background-color: transparent;
@@ -174,6 +185,13 @@ footer .icon-links a:hover {
   color: var(--first-color);
   cursor: pointer;
   border: 1px solid var(--first-color);
+}
+
+.suggestion-box {
+  background: var(--fourth-background);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: var(--shadow);
 }
 
 .text-article {
