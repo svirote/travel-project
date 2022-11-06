@@ -6,44 +6,6 @@ function visitorSuggestion() {
     .scrollIntoView({ behavior: "smooth" });
 }
 
-function footer() {
-  let footerText = document.querySelector("#footer-text");
-
-  footerText.innerHTML =
-    footerText.innerHTML +
-    `
-          <div class="container-2 row">
-        <div class="col-8">
-          This project was coded by Suelen Virote, and it is
-          <a
-            href="https://github.com/svirote/travel-project"
-            target="_blank"
-            title="GitHub Suelen Virote"
-          >
-            open-sourced
-          </a>
-        </div>
-        <div class="col-4">
-          <div class="icon-links d-flex justify-content-end">
-            <a
-              href="https://github.com/svirote"
-              target="_blank"
-              title="GitHub Suelen Virote"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="#" target="_blank" title="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
-        </div>
-      </div> 
-    `;
-}
-
-footer();
-
 document.querySelector(".suggestion-box").style.display = "none";
 
 let suggestion = document.querySelector(".suggestion");
@@ -61,33 +23,6 @@ form.addEventListener("submit", (event) => {
 
   let name = document.getElementById("user-name").value;
   let country = document.getElementById("country-suggestion").value;
-
-  let listing = [
-    "Austria",
-    "Belgium",
-    "Brazil",
-    "Croatia",
-    "Czech Republic",
-    "Estonia",
-    "France",
-    "Germany",
-    "Greece",
-    "Hungary",
-    "Ireland",
-    "Italy",
-    "Latvia",
-    "Lithuania",
-    "Luxembourg",
-    "Malta",
-    "Monaco",
-    "Netherlands",
-    "Poland",
-    "Portugal",
-    "Spain",
-    "Switzerland",
-    "Turkey",
-    "United Kingdom",
-  ];
 
   let section = document.querySelector(".user-suggestion");
 
@@ -114,3 +49,30 @@ form.addEventListener("submit", (event) => {
       });
   }
 });
+
+var listing = [
+  "Austria",
+  "Belgium",
+  "Brazil",
+  "Croatia",
+  "Czech Republic",
+  "Estonia",
+  "France",
+  "Germany",
+  "Greece",
+  "Hungary",
+  "Ireland",
+  "Italy",
+  "Latvia",
+  "Lithuania",
+  "Luxembourg",
+  "Malta",
+  "Monaco",
+  "Netherlands",
+  "Poland",
+  "Portugal",
+  "Spain",
+  "Switzerland",
+  "Turkey",
+  "United Kingdom",
+];

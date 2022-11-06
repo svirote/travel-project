@@ -231,6 +231,16 @@ ul {
   list-style: none;
 }
 
+.list-visited {
+  display: inline-block;
+  background-color: var(--fourth-background);
+  margin: 5px;
+  padding: 10px;
+  width: 340px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
 @keyframes rotation {
   from {
     transform: rotate(0deg);
