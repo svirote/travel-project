@@ -77,6 +77,11 @@ body {
   border-radius: 5px;
 }
 
+.checked {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
 .flags {
   max-width: 900px;
   margin: 0 auto;
